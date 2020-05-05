@@ -18,6 +18,12 @@ div.nav-bar{
 	z-index: 1000;
 	top:0;
 }
+#freetrial:hover{
+	opacity: .8;
+}
+.nav-bar a:hover{
+	color: black;
+}
 .colum1 {
 	display: flex;
 	float: left;
@@ -207,7 +213,7 @@ div.nav-bar{
     background-color: #303853;
     width: 100%;
     object-fit: cover;
-    background-attachment: fixed, fixed;
+
     
 
 }
@@ -220,6 +226,12 @@ div.nav-bar{
 .container:after {
 	clear: both;
 	content: "";
+	display: block;
+}
+
+.container-column:after{
+	content: "";
+	clear: both;
 	display: block;
 }
 
@@ -239,14 +251,16 @@ h1 ,h2 {
 
 @media screen and (max-width: 1000px)
 {
-	div.container{
-		overflow: auto;
-	}
+	
 	div.column1 ,div.column2{
 		width: 100%
 	}div.column1{
 		transform: translate(0,0);
 		text-align: center;
+	}
+	div.subcontainer{
+		width: 90%;
+		left: 6%;
 	}
 	div.small-container{
 		width: 100%;
@@ -339,11 +353,6 @@ p{
 	display: inline-block;
 }
 
-fieldset{
-	outline: none;
-	border-collapse: collapse;
-}
-
 input[type=text],input[type=password],input[type=Email]{
 	    background-color: #f9fafa;
     border-color: #d4d9dd;
@@ -360,6 +369,7 @@ input[type=text],input[type=password],input[type=Email]{
     color: #40484a;
 }
 
+
 .small-container2{
 
 	padding: .7em;
@@ -370,6 +380,9 @@ input[type=text],input[type=password],input[type=Email]{
 	text-align: center;
 }
 
+.footer button:hover{
+	background-color: #122359;
+}
 button{
 	width: 90%;
 	padding: .5em;
